@@ -1,13 +1,15 @@
 FROM ubuntu:22.04
 
-# Install dependencies
-RUN apt-get update && apt-get install -y curl ca-certificates git && rm -rf /var/lib/apt/lists/*
+# نصب وابستگی‌ها
+RUN apt-get update && apt-get install -y curl ca-certificates git build-essential && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 20
+# نصب Node.js 20
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs
+    && apt-get install -y nodejs \
+    && node -v \
+    && npm -v
 
-# Install Mockoon CLI
+# نصب Mockoon CLI
 RUN npm install -g @mockoon/cli
 
 WORKDIR /app
