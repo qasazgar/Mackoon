@@ -1,0 +1,50 @@
+{
+  "name": "My Mock API",
+  "port": 3000,
+  "routes": [
+    {
+      "method": "GET",
+      "endpoint": "/hello",
+      "responses": [
+        {
+          "body": "Hello from Mockoon!",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "endpoint": "/user",
+      "responses": [
+        {
+          "body": {
+            "data": {
+              "id": 6594259,
+              "nationalId": "",
+              "uniqueNumber": 101691299369,
+              "shadIdentifier": "01691299369",
+              "hashedId": "107a0541-f1f0-4e8f-a3f7-2b7b9e643ba4",
+              "name": null,
+              "family": null,
+              "event": "اندرز",
+              "provinceName": null,
+              "mobile": null,
+              "courseStudy": null,
+              "fieldStudy": null,
+              "districtName": null,
+              "fundamentalId": null,
+              "role": null,
+              "gender": null,
+              "roleType": null
+            },
+            "isSuccess": true,
+            "statusCode": "OK",
+            "code": 200,
+            "description": "با موفقیت انجام شد"
+          },
+          "status": 200
+        }
+      ]
+    }
+  ]
+}
