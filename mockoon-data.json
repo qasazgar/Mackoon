@@ -3,48 +3,65 @@
   "port": 3000,
   "routes": [
     {
-      "method": "GET",
+      "method": "get",
       "endpoint": "/hello",
       "responses": [
         {
-          "body": "Hello from Mockoon!",
-          "status": 200
+          "body": "{\r\n    \"data\": {\r\n        \"id\": 6594259,\r\n        \"nationalId\": \"\",\r\n        \"uniqueNumber\": 101691299369,\r\n        \"shadIdentifier\": \"01691299369\",\r\n        \"hashedId\": \"107a0541-f1f0-4e8f-a3f7-2b7b9e643ba4\",\r\n        \"name\": null,\r\n        \"family\": null,\r\n        \"event\": \"اندرز\",\r\n        \"provinceName\": null,\r\n        \"mobile\": null,\r\n        \"courseStudy\": null,\r\n        \"fieldStudy\": null,\r\n        \"districtName\": null,\r\n        \"fundamentalId\": null,\r\n        \"role\": null,\r\n        \"gender\": null,\r\n        \"roleType\": null\r\n    },\r\n    \"isSuccess\": true,\r\n    \"statusCode\": \"OK\",\r\n    \"code\": 200,\r\n    \"description\": \"با موفقیت انجام شد\"\r\n}",
+          "uuid": "2ab1c3ca-9b2a-4884-b08f-297e2a5304b0",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
         }
-      ]
-    },
-    {
-      "method": "GET",
-      "endpoint": "/user",
-      "responses": [
-        {
-          "body": {
-            "data": {
-              "id": 6594259,
-              "nationalId": "",
-              "uniqueNumber": 101691299369,
-              "shadIdentifier": "01691299369",
-              "hashedId": "107a0541-f1f0-4e8f-a3f7-2b7b9e643ba4",
-              "name": null,
-              "family": null,
-              "event": "اندرز",
-              "provinceName": null,
-              "mobile": null,
-              "courseStudy": null,
-              "fieldStudy": null,
-              "districtName": null,
-              "fundamentalId": null,
-              "role": null,
-              "gender": null,
-              "roleType": null
-            },
-            "isSuccess": true,
-            "statusCode": "OK",
-            "code": 200,
-            "description": "با موفقیت انجام شد"
-          },
-          "status": 200
-        }
-      ]
+      ],
+      "uuid": "4e123816-38d3-4db2-bf7e-a2dca552fa46",
+      "type": "http",
+      "documentation": "",
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
-  ]
+  ],
+  "uuid": "e6653094-92b0-4011-b8e6-16738b329343",
+  "lastMigration": 33,
+  "endpointPrefix": "",
+  "latency": 0,
+  "hostname": "",
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4e123816-38d3-4db2-bf7e-a2dca552fa46"
+    }
+  ],
+  "folders": [],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [],
+  "proxyReqHeaders": [],
+  "proxyResHeaders": [],
+  "data": [],
+  "callbacks": []
 }
